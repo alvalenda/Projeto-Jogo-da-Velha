@@ -1,5 +1,5 @@
 # Projeto-Jogo-da-Velha
-Faça um "jogo da velha" criando uma matriz em duas dimensões (Você deve criar um array com 3 arrays de 3 elementos cada dentro). O programa deve pedir as coordenadas (linha e coluna) alternadamente para 2 jogares e marcar X ou O em cada caso. Caso um jogador vença, ele deve perguntar se desejam jogar mais uma vez, e registrar quem venceu aquela rodada, se os jogadores desejarem parar, o programa deve mostrar quem ganhou mais rodadas e quem é o grande vencedor.
+Faça um "jogo da velha" criando uma matriz em duas dimensões (Você deve criar um array com 3 arrays de 3 elementos cada dentro). O programa deve pedir as coordenadas (linha e coluna) alternadamente para 2 jogares e marcar `X` ou `O` em cada caso. Caso um jogador vença, ele deve perguntar se desejam jogar mais uma vez, e registrar quem venceu aquela rodada, se os jogadores desejarem parar, o programa deve mostrar quem ganhou mais rodadas e quem é o grande vencedor.
 
 ### Critérios de Avaliação
 A avaliação será feita por entregáveis obrigatórios, cada um valerá uma quantidade de pontos, todos começarão com 0 pontos, a cada item entregue, você receberá a quantia pertinente aquela entrega.
