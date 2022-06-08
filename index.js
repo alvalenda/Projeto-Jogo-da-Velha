@@ -60,20 +60,19 @@ function anunciaCampeao(placar) {
     console.log(mensagem);
 }
 
-function novaRodada(matriz, vencedor, placar) {
+function novaRodada(matriz, vencedor, placar, indica_turno) {
     for (let i = 0; i < matriz.length; i++) {
         for (let j = 0; j < matriz.length; j++) {
             matriz[i][j] = ' ';
         }
     }
     vencedor = false;
+    indica_turno = Math.floor(Math.random() * 2);
     imprimeMatriz(matriz, placar);
 }
 
 function lerPosicao(num) {
-    if (num < 3) return [0, num];
-    else if (num < 6) return [1, num - 3];
-    else return [2, num - 6];
+    return [Math.floor((num - 1) / 3), (num - 1) % 3];
 }
 
 function darPosicao(i, j) {
@@ -131,7 +130,7 @@ function checaAI(matriz) {
 }
 
 function validaPosicao(num, matriz) {
-    const [i, j] = lerPosicao(num - 1);
+    const [i, j] = lerPosicao(num);
     if (matriz[i][j] === ' ') return false;
     else return true;
 }
@@ -172,14 +171,14 @@ function jogarNovamente() {
 }
 
 function escreveJogada(num, matriz, marca) {
-    const [i, j] = lerPosicao(num - 1);
+    const [i, j] = lerPosicao(num);
     matriz[i][j] = marca;
 }
 
 function checaVencedor(matriz) {
     let vencedor = false;
 
-    for (let linha = 0; linha < 3; linha++) {
+    for (let linha = 0; linha < matriz.length; linha++) {
         if (
             matriz[linha][0] != ' ' &&
             matriz[linha][0] === matriz[linha][1] &&
@@ -188,7 +187,7 @@ function checaVencedor(matriz) {
             vencedor = matriz[linha][0];
     }
 
-    for (let coluna = 0; coluna < 3; coluna++) {
+    for (let coluna = 0; coluna < matriz.length; coluna++) {
         if (
             matriz[0][coluna] != ' ' &&
             matriz[0][coluna] === matriz[1][coluna] &&
@@ -240,7 +239,7 @@ function main() {
         if (vencedor || matrizCheia(matriz)) {
             anunciaVencedor(vencedor, matriz, placar);
             if (jogarNovamente()) {
-                novaRodada(matriz, vencedor, placar);
+                novaRodada(matriz, vencedor, placar, indica_turno);
                 continue loopPrincipal;
             } else break loopPrincipal;
         }
