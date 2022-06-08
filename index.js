@@ -60,14 +60,13 @@ function anunciaCampeao(placar) {
     console.log(mensagem);
 }
 
-function novaRodada(matriz, vencedor, placar, indica_turno) {
+function novaRodada(matriz, vencedor, placar) {
     for (let i = 0; i < matriz.length; i++) {
         for (let j = 0; j < matriz.length; j++) {
             matriz[i][j] = ' ';
         }
     }
     vencedor = false;
-    indica_turno = Math.floor(Math.random() * 2);
     imprimeMatriz(matriz, placar);
 }
 
@@ -239,7 +238,8 @@ function main() {
         if (vencedor || matrizCheia(matriz)) {
             anunciaVencedor(vencedor, matriz, placar);
             if (jogarNovamente()) {
-                novaRodada(matriz, vencedor, placar, indica_turno);
+                novaRodada(matriz, vencedor, placar);
+                indica_turno = (indica_turno % 2) + 1;
                 continue loopPrincipal;
             } else break loopPrincipal;
         }
