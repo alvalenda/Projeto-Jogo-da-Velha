@@ -7,7 +7,7 @@ Faça um "jogo da velha" criando uma matriz em duas dimensões (Você deve criar
 * `imprimeMatriz(matriz, placar)` Recebe as variáveis, `matriz` e `placar`, imprimindo-as no terminal após a jogada de cada **jogador**. 
 * `lerJogada(matriz)` Lê a posição que o **jogador** deseja efetuar a jogada, tratando a entrada e verificando se é uma posição livre. Retorna um *número* que representa posição no campo de jogo que a jogada será realizada. 
 * `computadorJoga(matriz)` Semelhante a função `lerJogada`, porém define a posição que o segundo jogador (**computador**) jogará. A variável *\_jogada* recebe um valor da função `checaAI` caso satisfaça alguma condição, caso contrário jogará em uma posição aleatória.
-* `escreveJogada(num, matriz, marca)` Onde `num`é o número da posição da `matriz` que receberá a `marca` correspondende ao **jogador** ou **computador**. Invoca `lerPosicao(num)` para converter `num` em coordenadas `(i,j)` de uma matriz. Grava a `marca` em `matriz[i][j]`.
+* `escreveJogada(num, matriz, marca)` Onde `num`é o número da posição da `matriz` que receberá a `marca` correspondende ao **jogador** ou **computador**. Invoca `lerPosicao(num)` para converter `num` em coordenadas `(i, j)` de uma matriz. Grava a `marca` em `matriz[i][j]`.
 * `lerPosicao(num)` Converte um número em uma coordenada _**(i, j)**_ de uma matriz 3x3.
 * `darPosicao(i, j)` Converte uma coordenada _**(i, j)**_ em um número que representa uma casa do jogo. 
 * `checaAI(matriz)` Executa testes para definir se o computador fará alguma jogada específica. 
