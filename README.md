@@ -28,7 +28,7 @@ Faça um "jogo da velha" criando uma matriz em duas dimensões (Você deve criar
 * `vencedor` Controla se há um vencedor nessa rodadas. Se diferente de `false` há um vencedor. 
 * `indica_turno` Controla se é o turno do **Jogador** ou do **Computador**. 
 
-**Autor.** [alvalenda](https://github.com/alvalenda)
+**Autor.** [Flavio Alvarenga](https://github.com/alvalenda)
 
 ---
 
