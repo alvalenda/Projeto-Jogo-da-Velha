@@ -13,9 +13,9 @@ Faça um "jogo da velha" criando uma matriz em duas dimensões (Você deve criar
 * `darPosicao(i, j)`: Converte uma coordenada _**(i, j)**_ em um número que representa uma casa do jogo.
 * `validaPosicao(num, matriz)`: Invoca `lerPosicao()` para converter `num` em coordadenas **_(i, j)_**, em seguida checa se a posição correspondente na matriz(i,j) esta vazia. Retorna valor `booleano`: *`true`* ou `false`.    
 * `checaAI(matriz)`: Executa testes para definir se o computador fará alguma jogada específica, na seguinte ordem: 
-  * Checa se há uma jogada que garanta sua vitória;
-  * Checa se há uma jogada que evita sua derrota iminente;
-  * Caso contrário retorna `null`.
+  1. Checa se há uma jogada que garanta sua vitória;
+  2. Checa se há uma jogada que evita sua derrota iminente;
+  3. Caso contrário retorna `null`.
 * `checaVencedor(matriz)`: Varre a `matriz` checando se algum dos jogadores venceu a partida. Se não há vencedores retorna `false`. 
 * `matrizCheia(matriz)`: Checa se não há mais jogadas possíveis retornando o `boolean`:`true` no caso de cheia, se econtrar uma casa vazia retorna `false`. 
 * `anunciaVencedor(vencedor, matriz, placar)`: Imprime quem foi o `vencedor`, a `matriz` do jogo e o `placar`.
@@ -24,11 +24,11 @@ Faça um "jogo da velha" criando uma matriz em duas dimensões (Você deve criar
 * `anunciaCampeao(placar)`: Recebe `placar`, define o campeão e define o grande vencedor ao final de todas as rodadas.          
 
 ### Variáveis de Controle
-* `matriz` Acumula os valores relacionaos ao campo do jogo da velha. É uma matriz de duas dimensões.
-* `placar` Conta as rodadas vencidas pelo **Jogador 1** e pelo **Jogador 2**.
-* `vsAI` Controla se o jogo será realizado contra o **Computador** ou contra outro **Jogador**.
-* `vencedor` Controla se há um vencedor nessa rodadas. Se diferente de `false` há um vencedor. 
-* `indica_turno` Controla se é o turno do **Jogador 1** ou do **Jogador 2**. 
+* `matriz`: Acumula os valores relacionaos ao campo do jogo da velha. É uma matriz de duas dimensões.
+* `placar`: Conta as rodadas vencidas pelo **Jogador 1** e pelo **Jogador 2**.
+* `vsAI`: Controla se o jogo será realizado contra o **Computador** ou contra outro **Jogador**.
+* `vencedor`: Controla se há um vencedor nessa rodadas. Se diferente de `false` há um vencedor. 
+* `indica_turno`: Controla se é o turno do **Jogador 1** ou do **Jogador 2**. 
 
 **Autor.** [Flavio Alvarenga](https://github.com/alvalenda)
 
