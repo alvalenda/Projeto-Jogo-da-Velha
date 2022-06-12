@@ -42,7 +42,7 @@ function anunciaVencedor(vencedor, matriz, placar) {
     } else if (vencedor === 'O') {
         mensagem = "\tJOGADOR 'O' VENCEU!!!\t(╯°□°）╯︵ ┻━┻\n";
         placar['Computador'] += 1;
-    } else mensagem = '\tDEU VELHA!!!\t¯_(ツ)_/¯\n';
+    } else mensagem = '\tDEU VELHA!!!\t¯\\_(ツ)_/¯\n';
     imprimeMatriz(matriz, placar);
     console.log(mensagem);
 }
@@ -56,7 +56,7 @@ function anunciaCampeao(placar) {
         mensagem = "\tJOGADOR 'X' FOI O GRANDE CAMPEÃO!!!\t☜(ﾟヮﾟ☜)\n";
     } else if (placar['Jogador'] < placar['Computador']) {
         mensagem = "\tJOGADOR 'O' FOI O GRANDE CAMPEÃO!!!\t(╯°□°）╯︵ ┻━┻\n";
-    } else mensagem = '\tEMPATOU!!! NÃO TEMOS UM CAMPEÃO!!!\t¯_(ツ)_/¯\n';
+    } else mensagem = '\tEMPATOU!!! NÃO TEMOS UM CAMPEÃO!!!\t¯\\_(ツ)_/¯\n';
     console.log(mensagem);
 }
 
